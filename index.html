@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top">
+                <div class="left">
+                    <div><img src="icon/magnify.svg" alt="Search icon"></div>
+                    <input type="search" id="search" name="research" placeholder="Search">
+                </div>
+                <div class="right">
+                    <div><img src="icon/pencil-outline.svg" alt=""></div>
+                    <button id="new_book">New book</button>
+                </div>
+
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <div><img src="icon/library-outline.svg" alt="Library icon"></div>
+                    <h1>Library for all</h1>
+                </div>
+                
+                <ul class="right">
+                    <li>Add book</li>
+                    <li>Open book</li>
+                    <li>Remove book</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="content">
+                <!-- Affichage des livres de la bibliothèque-->
+                 
+
+            </div>
+
+            <div class="footer">
+                <p>"A book is a door open to another world, a source of knowledge, 
+                    and a companion that never ceases to teach us."
+                </p>
+                <button id="new_book">New book</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Contenu du formulaire qui n'apparait pas sur la page-->
+
+    <dialog id="form">
+        <div class="dialog">
+            <div class="icon"><img src="icon/library-outline.svg" alt="Library icon"></div>
+            <div class="container">
+                <form>
+                    <h1>Complete this form</h1>
+                        
+                    <div class="top"> 
+                        <label for="title"> Title <br>
+                        <input type="text" id="title" name="book_title" required></label> <br>
+
+                        <label for="author">
+                            Author <br> <input type="text" id="author" name="book_author" required>
+                        </label> <br>
+
+                        <label for="pages">
+                            Pages Number <br> <input type="number" id="pages" name="book_pages_number" required>
+                        </label>
+                    </div>
+
+                    <h4>Book Status</h4>
+                    <div class="radio">
+                        <input type="radio" id="read" name="book_status" value="read" required>
+                        <label for="read">Read</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="no_read" name="book_status" value="No read" required>
+                        <label for="no_read">No read</label>
+                    </div>
+                    
+                    <h3>Put other information there !</h3>
+                    <textarea name="information" id="information" maxlength="30" 
+                    placeholder="Information">No information</textarea>
+                </form>
+                <div class="button">
+                    <button id="add_book">Add</button>
+                    <button id="reset" type="reset"><div><img src="icon/refresh.svg" alt=""></div></button>
+                </div> 
+            </div>                
+            <button id="close_form">✖</button>            
+        </div>    
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
