@@ -16,7 +16,7 @@
                 </div>
                 <div class="right">
                     <div><img src="icon/pencil-outline.svg" alt=""></div>
-                    <button id="new_book">New book</button>
+                    <button class="new_book">New book</button>
                 </div>
 
             </div>
@@ -39,14 +39,13 @@
             <div class="content">
                 <!-- Affichage des livres de la bibliothèque-->
                  
-
             </div>
 
             <div class="footer">
                 <p>"A book is a door open to another world, a source of knowledge, 
                     and a companion that never ceases to teach us."
                 </p>
-                <button id="new_book">New book</button>
+                <button class="new_book">New book</button>
             </div>
         </div>
     </div>
@@ -75,7 +74,7 @@
 
                     <h4>Book Status</h4>
                     <div class="radio">
-                        <input type="radio" id="read" name="book_status" value="read" required>
+                        <input type="radio" id="read" name="book_status" value="read">
                         <label for="read">Read</label>
                     </div>
                     <div class="radio">
@@ -86,11 +85,13 @@
                     <h3>Put other information there !</h3>
                     <textarea name="information" id="information" maxlength="30" 
                     placeholder="Information">No information</textarea>
+                    
+                    <div class="button">
+                        <button id="add_book">Add</button>
+                        <button id="reset" type="reset"><div><img src="icon/refresh.svg" alt=""></div></button>
+                    </div>  
+
                 </form>
-                <div class="button">
-                    <button id="add_book">Add</button>
-                    <button id="reset" type="reset"><div><img src="icon/refresh.svg" alt=""></div></button>
-                </div> 
             </div>                
             <button id="close_form">✖</button>            
         </div>    

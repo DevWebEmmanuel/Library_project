@@ -271,14 +271,14 @@ form > textarea:focus {
     outline: none;
 }
 
-.container > .button {
+form > .button {
     display: flex;
     justify-content: center;
     align-content: center;
     gap: 60px;
 }
 
-.button > button {
+form > .button > button {
     height: 50px;
     width: 130px;
     background-color: var(--btn-color);
@@ -287,14 +287,14 @@ form > textarea:focus {
     cursor: pointer;
 }
 
-.button > button > div {
+form > .button > button > div {
     display: grid;
     place-self: center;
     width: 40px;
     height: 40px;
 }
 
-.button > #add_book {
+form > .button > #add_book {
     font-weight: bold;
     font-size: 18px;
     color: black;
@@ -307,13 +307,13 @@ form > textarea:focus {
     padding: 30px 50px;
 }
 
-.content > .book_container {
+.content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.book_container > .book_content {
+.content > .book_content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
